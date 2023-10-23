@@ -89,7 +89,12 @@ btn.addEventListener('click', () => {
     }
 
     console.log(newMember);
-    team.push(newMember);
+    if (age.value >= 18) {
+        team.push(newMember)
+    } else {
+        alert('The application is only open to persons over 18 years of age')
+        return
+    };
     printCol(newMember);
     reset();
 });

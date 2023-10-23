@@ -6,3 +6,7 @@ body {
 .card {
     cursor: pointer;
 }
+
+.card:hover {
+    filter: brightness(80%) contrast(90%);
+}
