@@ -16,3 +16,6 @@ Aggiungere un nuovo membro al team
 Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
 E ricordiamoci che console.log() è nostro amico!
+
+
+
