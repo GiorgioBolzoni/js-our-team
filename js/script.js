@@ -78,3 +78,25 @@ function printCol(member) {
 
     rowEl.append(col);
 }
+// aggiungo nuovo membro al team
+const btn = document.querySelector('button');
+btn.addEventListener('click', () => {
+    const newMember = {
+        name: document.getElementById('name').value,
+        role: document.getElementById('role').value,
+        age: document.getElementById('age').value,
+        picture: "fotoProfilo.jpg",
+    }
+
+    console.log(newMember);
+    team.push(newMember);
+    printCol(newMember);
+    reset();
+});
+
+function reset() {
+    document.getElementById('name').value = '';
+    document.getElementById('role').value = '';
+    document.getElementById('age').value = '';
+    document.getElementById('picture').value = '';
+}
